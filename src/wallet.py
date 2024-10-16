@@ -20,6 +20,12 @@ class Wallet(object):
 
         self.balance -= amount
 
+
+    def get_balance(self) -> float:
+        """Balance accessor"""
+        return self.balance
+            
+
     def add_cash(self, amount):
         """Adds the specified amount of money to the current Wallet object"""
         self.balance += amount
