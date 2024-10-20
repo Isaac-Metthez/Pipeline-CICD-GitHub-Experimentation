@@ -15,7 +15,7 @@ permissions:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: [vm-runner]
 
     steps:
     - uses: actions/checkout@v4
@@ -45,7 +45,7 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
   build-docker-image:
-    runs-on: ubuntu-latest
+    runs-on: [vm-runner]
     
     steps:
     - uses: actions/checkout@v3
